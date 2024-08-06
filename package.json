@@ -1,5 +1,5 @@
 {
-  "name": "talk_template",
+  "name": "rlc_talk",
   "packageManager": "pnpm@9.2.0",
   "scripts": {
     "dev": "slidev slides.md",
