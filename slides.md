@@ -18,9 +18,13 @@ layout: default
 ---
 # Goals in Reinforcement Learning
 
+<v-clicks depth="2">
+
 - McCarthy's definition of intelligence and goals.
 - Reward hypothesis.
-- Goals as preferences over state-action histories [Bowling et al., 2023].
+- Goals as preferences over state-action histories \[Bowling et al., 2023].
+
+</v-clicks>
 
 ---
 layout: two-cols-title
@@ -141,6 +145,7 @@ we need agents that can propose and pursue rich, complex, and creative goals.
 ---
 layout: two-cols-header
 ---
+
 
 # Surveyed Goal Representation Approaches
 
