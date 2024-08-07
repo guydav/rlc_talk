@@ -123,35 +123,81 @@ we need agents that can propose and pursue rich, complex, and creative goals.
 ---
 
 # Desiderata for Goal Representations
+
+<v-clicks depth="2">
+
 - Abstraction (abstract goals, abstracting goal components)
 - Temporal extension
 - Compositionality
 - Grounding
-<br><br><br>
-- These properties likely neither necessary nor sufficient
 
+</v-clicks>
+
+
+---
+layout: two-cols-header
 ---
 
 # Surveyed Goal Representation Approaches
+
+::left::
+
+<div>
 <v-clicks depth="2">
 
 - Implicit (directly encoded as reward functions)
 - Goal states (e.g. target manipulator positions)
 - Image-based observations 
-- Natural language:
-    - Environment-provided
-    - Procedurally generated from minimal grammars
-    - Language-based exploration
-    - Multimodal models
+- Natural language-based goals
 - Represented as programs? 
 
 </v-clicks>
+</div>
+::right::
 
-<!-- <div class="text-xl absolute top-1/2 bg-slate-200 border-2 border-black py-6" v-click>
-Prevalent non-language approaches facilitate grounding at the expense of other desiderata
-<br><br>
-Language (and programs) offer benefits at the cost of grounding complexity
+<div class="grid grid-cols-2 gap-2">
+    <div><figure class="image is-square is-inline-block">
+        <img src="/images/reward_function_grid.png" width="120" v-click="1">
+    </figure></div>
+    <div><figure class="image is-square is-inline-block" v-click="2">
+        <img src="/images/goal_observation.png" width="120">
+    </figure></div>
+    <div class="col-span-2"><figure class="image is-inline-block">
+        <img src="/images/vision_language_goals.png" width="300" v-click="4">
+    </figure></div>
+    <div class="col-span-2" v-click="5">
+```lisp
+(preference throwBalltoBin
+(exists (?d - dodgeball ?h - hegagonal_bin)
+(then
+    (once (agent_holds ?d))
+    (hold (and (not (agent_holds ?d)) (in_motion ?d)))
+    (once (and (not (in_motion ?d)) (in ?h ?d)))
+)))
+```
+    </div>
+</div>
+
+<!-- <div class="flex flex-col justify-between content-center" style="height: 75%;">
+    <div><figure class="image is-square is-inline-block">
+        <img src="/images/reward_function_grid.png" width="120">
+    </figure></div>
+    <div><figure class="image is-square is-inline-block">
+        <img src="/images/goal_observation.png" width="120">
+    </figure></div>
+    <div><figure class="image is-inline-block">
+        <img src="/images/vision_language_goals.png" width="300">
+    </figure></div>
 </div> -->
+
+<style>
+    .image img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.5em;
+    }
+</style>
     
 
 ---
