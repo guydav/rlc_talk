@@ -23,8 +23,10 @@ layout: default
 - Goals as preferences over state-action histories [Bowling et al., 2023].
 
 ---
-layout: two-cols-header
+layout: two-cols-title
 ---
+
+:: title ::
 # Straining these definitions of goals
 
 ::left::
@@ -107,17 +109,19 @@ layout: two-cols-header
  
 
 ---
-layout: fact
+layout: side-title
+align: rm-lm
 ---
 
-## Core idea:
-<br>
-If we want to develop agents that accomplish diverse tasks across different environments, 
+:: title ::
 
+## Core idea&nbsp;<mdi-lightbulb />
+
+:: content ::
+
+If we want to develop agents that accomplish diverse tasks across different environments, 
 we need agents that can propose and pursue rich, complex, and creative goals.
-<br>
-<br>
-<br>
+
 <span class="text-xs">\[Ouedeyer et al., 2007; Colas et al., 2023]</span>
 
 ---
@@ -201,13 +205,17 @@ layout: two-cols-header
     
 
 ---
-layout: fact
+layout: side-title
+align: rm-lm
 ---
 
-## Key takeaway:
-<br>
+:: title ::
+
+## Key takeaway&nbsp;<mdi-food-takeout-box />
+
+:: content ::
+
 Prevalent non-language approaches facilitate grounding at the expense of other desiderata
-<br><br>
 Language (and programs) offer benefits at the cost of grounding complexity
 
 ---
@@ -223,20 +231,28 @@ Language (and programs) offer benefits at the cost of grounding complexity
 
 
 ---
-# Takeaways
+layout: two-cols-title
+---
+
+:: left ::
+# Takeaways&nbsp;<mdi-food-takeout-box />
 <v-clicks depth="2">
 
 - **Takeaway 1:** We need agents that can propose and pursue rich, complex, and creative goals.
 - **Takeaway 2:** This requires richer goal representations and developing methods to ground them.
 <br><br>
 
-## Questions
+</v-clicks>
+:: right ::
+
+<v-clicks at="+1">
+
+## Questions <mdi-chat-question />
 
 - Where do goals (and their representations) fall on the agent-environment boundary?
 - What important desiderata are we missing?
 - How do temporally extended goals play with the Markov assumption?
 - Can program-based goals scale to diverse environments?
 - What can building agents that propose and pursue rich goals teach us about human goal-setting?
-
 
 </v-clicks>
