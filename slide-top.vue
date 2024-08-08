@@ -178,7 +178,7 @@ onMounted(() => checkvars())
     class="absolute top-3 right-2 p-3 pr-3 border.b-1 z-10 font-size-3 font-mono width-full text-right"
     :class="brand_tr_color"
   >
-    <a href="https://gureckislab.org"> <uim-cube /> gureckislab.org </a>
+    <a href="https://guydavidson.me"> <uim-cube /> guydavidson.me </a>
   </div>
 </template>
 
