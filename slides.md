@@ -23,6 +23,8 @@ layout: default
 - McCarthy's definition of intelligence and goals.
 - Reward hypothesis.
 - Goals as preferences over state-action histories \[Bowling et al., 2023].
+    - Insufficient to express constraints or risks \[Bellemare et al., 2023].
+- Goal-conditioned RL (more on this later).
 
 </v-clicks>
 
@@ -126,7 +128,7 @@ align: rm-lm
 If we want to develop agents that accomplish diverse tasks across different environments, 
 we need agents that can propose and pursue rich, complex, and creative goals.
 
-<span class="text-xs">\[Ouedeyer et al., 2007; Colas et al., 2023]</span>
+<span class="text-xs">\[Ouedeyer et al., 2007; Colas et al., 2022]</span>
 
 ---
 
@@ -223,6 +225,77 @@ align: rm-lm
 Prevalent non-language approaches facilitate grounding at the expense of other desiderata
 Language (and programs) offer benefits at the cost of grounding complexity
 
+---
+layout: two-cols-header
+---
+
+# Example argument: abstraction
+
+::left::
+
+## Representing abstract goals
+
+<!-- <v-click>"Be efficient," "be safe," "help the other agent but don't trivialize the task for them"</v-click> -->
+
+<div>
+    <div class="flex flex-row justify-center">
+        <figure class="image is-square is-inline-block" v-click>
+            <img src="/images/asimov_three_laws.webp" width="300">
+        </figure>
+    </div>
+</div>
+
+<div>
+<v-clicks depth="2">
+
+- **Reward functions:** Challenging reward engineering effort
+- **Observations:** Borderline impossible?
+- **Language:** Easy to express, hard to ground
+- **Programs:** Open question
+
+</v-clicks>
+</div>
+
+::right::
+
+## Abstracting goal components
+
+
+<div>
+    <div class="flex flex-row justify-evenly">
+        <v-click>
+            <figure class="image is-square is-inline-block">
+                <img src="/images/block_on_block.jpeg" width="120">
+            </figure>
+        </v-click>
+        <v-click>
+            <figure class="image is-square is-inline-block">
+                <img src="/images/any_block_on_any_block.jpeg" width="120">
+            </figure>
+        </v-click>
+    </div>
+</div>
+
+<div>
+<v-clicks depth="2">
+
+- **Reward functions:** (less) Challenging reward engineering effort
+- **Observations:** Requires embedding abstractions
+- **Language:** Abstraction is natural, grounding is hard
+- **Programs:** Easy for abstractions defined in program grammar
+
+
+</v-clicks>
+</div>
+
+<!-- 
+1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
+3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. 
+-->
+
+---
+disabled: true
 ---
 
 # Example argument: compositionality
