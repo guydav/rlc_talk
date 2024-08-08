@@ -226,8 +226,10 @@ Prevalent non-language approaches facilitate grounding at the expense of other d
 Language (and programs) offer benefits at the cost of grounding complexity
 
 ---
-layout: two-cols-header
+layout: two-cols-title
 ---
+
+::title::
 
 # Example argument: abstraction
 
@@ -237,13 +239,12 @@ layout: two-cols-header
 
 <!-- <v-click>"Be efficient," "be safe," "help the other agent but don't trivialize the task for them"</v-click> -->
 
-<div>
-    <div class="flex flex-row justify-center">
-        <figure class="image is-square is-inline-block" v-click>
-            <img src="/images/asimov_three_laws.webp" width="300">
-        </figure>
-    </div>
+<div class="flex flex-row justify-center w-full">
+    <figure class="image is-square is-inline-block" v-click>
+        <img src="/images/asimov_three_laws.webp" width="300">
+    </figure>
 </div>
+
 
 <div>
 <v-clicks depth="2">
@@ -261,20 +262,20 @@ layout: two-cols-header
 ## Abstracting goal components
 
 
-<div>
-    <div class="flex flex-row justify-evenly">
-        <v-click>
-            <figure class="image is-square is-inline-block">
-                <img src="/images/block_on_block.jpeg" width="120">
-            </figure>
-        </v-click>
-        <v-click>
-            <figure class="image is-square is-inline-block">
-                <img src="/images/any_block_on_any_block.jpeg" width="120">
-            </figure>
-        </v-click>
-    </div>
+
+<div class="flex flex-row justify-evenly w-full">
+    <v-click>
+        <figure class="image is-square is-inline-block">
+            <img src="/images/block_on_block.jpeg" width="120">
+        </figure>
+    </v-click>
+    <v-click>
+        <figure class="image is-square is-inline-block">
+            <img src="/images/any_block_on_any_block.jpeg" width="120">
+        </figure>
+    </v-click>
 </div>
+
 
 <div>
 <v-clicks depth="2">
@@ -288,10 +289,10 @@ layout: two-cols-header
 </v-clicks>
 </div>
 
-<!-- 
+<!--
 1. A robot may not injure a human being or, through inaction, allow a human being to come to harm.
 2. A robot must obey orders given it by human beings except where such orders would conflict with the First Law.
-3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law. 
+3. A robot must protect its own existence as long as such protection does not conflict with the First or Second Law.
 -->
 
 ---
