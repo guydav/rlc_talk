@@ -223,6 +223,7 @@ align: rm-lm
 :: content ::
 
 Prevalent non-language approaches facilitate grounding at the expense of other desiderata
+
 Language (and programs) offer benefits at the cost of grounding complexity
 
 ---
@@ -335,3 +336,18 @@ layout: two-cols-title
 - What can building agents that propose and pursue rich goals teach us about human goal-setting?
 
 </v-clicks>
+
+
+---
+layout: center
+---
+
+# Thank you!
+<br>
+
+### _Toward Complex and Structured Goals in Reinforcement Learning_
+
+**Guy Davidson & Todd M. Gureckis**  
+_New York University_
+<Email v="guy.davidson@nyu.edu" />
+
